@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useEmailStore } from '@stores/storeEmail';
 import iconList from '@assets/icon-list.svg';
@@ -8,8 +8,12 @@ import imageDesktop from '@assets/illustration-sign-up-desktop.svg';
 const Home = () => {
   const lists = ['Product discovery and building what matters', 'Measuring to ensure updates are a success', 'And much more!'];
   const navigate = useNavigate();
-  const { setEmail } = useEmailStore();
+  const { setEmail, removeEmail } = useEmailStore();
   const [validateEmail, setValidateEmail] = useState(true);
+
+  useEffect(() => {
+    removeEmail();
+  }, []);
 
   const handleChange = () => {
     setValidateEmail(true);
@@ -32,9 +36,9 @@ const Home = () => {
 
   return (
     <div className="min-h-screen text-dark-slate-grey md:flex md:items-center md:justify-center">
-      <div className="flex min-h-screen flex-col bg-white md:min-h-[unset]  md:flex-row md:justify-between md:rounded-[32px]">
-        <div className="order-2 md:order-1 md:w-[470px]">
-          <div className="flex h-full flex-col justify-center px-5 md:px-12">
+      <div className="flex min-h-screen flex-col bg-white md:min-h-[unset] md:flex-row md:justify-between md:rounded-[32px]">
+        <div className="order-2 md:order-1 md:w-[480px]">
+          <div className="flex h-full flex-col justify-center px-5 md:px-14">
             <h2 className="pt-8 text-[40px] font-bold md:pt-0 md:text-[55px]">Stay Updated!</h2>
             <p className="py-4">Join 60,000+ product managers receiving monthly updates on:</p>
             <ul className="pb-7">
