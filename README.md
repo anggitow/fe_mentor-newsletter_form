@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/newsletter-form-using-react-vite-tailwind-298YouTQAT](https://www.frontendmentor.io/solutions/newsletter-form-using-react-vite-tailwind-298YouTQAT)
-- Live Site URL: [https://fe-mentor-newsletter-form.vercel.app/](https://fe-mentor-newsletter-form.vercel.app/)
+- Live Site URL: [https://fe-mentor-aw-newsletter-form.vercel.app/](https://fe-mentor-aw-newsletter-form.vercel.app/)
 
 ### Built with
 
