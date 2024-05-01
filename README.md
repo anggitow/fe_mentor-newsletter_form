@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](![image](https://github.com/anggitow/fe_mentor-newsletter_form/assets/81467207/d96bd4cb-6e0c-436c-85f5-d096ba66acaa))
+![Newsletter Form](/public/newsletter-form.png "Newsletter Form")
 
 ### Links
 
